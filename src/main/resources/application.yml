@@ -1,0 +1,17 @@
+server:
+  context-path: /api
+  port: 8083
+
+spring:
+  main:
+    banner-mode: 'off'
+
+logging:
+  level:
+    ROOT: ERROR
+
+app:
+  S1SRemoteServer:
+    basePathUrl: ${S1S_BASE_PATH_URL}
+    user: ${S1S_USER}
+    password: ${S1S_PASSWORD}
